@@ -5,6 +5,8 @@
 
 }
 .logo-for-header{
+    margin-right: 0.0rem;
+    z-index: 5;
     width: fit-content;
     align-content: center;
     border: black solid 10px;
@@ -17,6 +19,4 @@ h1{
 }
 #logotext{
     font-weight: 450;
-    scale:;
-    scale
 }
