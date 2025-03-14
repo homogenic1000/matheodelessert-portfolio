@@ -1,13 +1,22 @@
 .logo{
-    width: 50px;
+    width: 25vw;
+
 
 
 }
 .logo-for-header{
+    width: fit-content;
     align-content: center;
-    border: black solid 5px;
+    border: black solid 10px;
+
 }
 
 h1{
-    
+    font-family: Lora;
+
+}
+#logotext{
+    font-weight: 450;
+    scale:;
+    scale
 }
