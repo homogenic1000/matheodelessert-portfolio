@@ -8,22 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
         return; // Arrêter l'exécution si l'élément n'existe pas
     }
 
+
+
     function createRandomLogo(event) {
         // Cloner le logo
         let logoClone = logoSpawn.cloneNode(true);
+        let RotateClone = Math.floor(Math.random() * 360);
 
         // Calculer les dimensions maximales
         const maxX = window.innerWidth - (logoSpawn.width || 50);
         const maxY = window.innerHeight - (logoSpawn.height || 50);
 
-        // Générer position aléatoire
-        const randomX = Math.floor(Math.random() * maxX);
-        const randomY = Math.floor(Math.random() * maxY);
+
+        const MOUSEx = event.clientX
+        const MOUSEy = event.clientY
+
 
         // Appliquer les styles de position
         logoClone.style.position = 'absolute';
-        logoClone.style.left = randomX + 'px';
-        logoClone.style.top = randomY + 'px';
+        logoClone.style.left = MOUSEx + 'px';
+        logoClone.style.top = MOUSEy + 'px';
+        logoClone.style.rotate = RotateClone + 'deg';
 
         // Ajouter le logo au body
         document.body.appendChild(logoClone);
