@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 
+body{
+    margin: 1vw;
+}
 .logo{
-    width: 25vw;
-
+    width: 5vw;
 
 
 }
-.logo-for-header{
-    margin-right: 0.0rem;
-    z-index: 5;
+#logo-for-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     width: fit-content;
-    align-content: center;
-    border: black solid 10px;
-
+    flex-direction: row;
 }
 
 h1{
@@ -21,5 +23,9 @@ h1{
 
 }
 #logotext{
+    transform: scaleY(1.5);
+    margin: 0.5rem;
     font-weight: 450;
 }
+
+
