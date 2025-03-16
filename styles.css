@@ -31,6 +31,8 @@ h1{
 
 
 #LogoIMG{
+    opacity: 0;
+    animation: apparition 50ms forwards;
     margin-right: 0.8rem;
     width: 7rem;
     z-index: 5;
@@ -40,3 +42,11 @@ body{
     margin: 50px;
 }
 
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
