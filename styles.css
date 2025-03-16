@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
 body{
     margin: 1vw;
 }
 .logo{
+    filter: url(#grain);
     width: 5vw;
 
 
@@ -23,9 +24,54 @@ h1{
 
 }
 #logotext{
-    transform: scaleY(1.5);
-    margin: 0.5rem;
-    font-weight: 450;
+    animation-name: typo-move;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+
+}
+#changing {
+
 }
 
+section{
 
+    margin-left: 5.5vw;
+    text-align: justify;
+    width: 20vw
+}
+
+#flying-buttons{
+    left: 10vw;
+    display: flex;
+    align-items: center;
+}
+
+#row1{
+    margin: 2vw;
+    display: flex;
+
+}
+#row2{
+    padding: 2vw;
+    margin: 2vw;
+    display: flex;
+}
+
+@keyframes typo-move {
+    0% {
+        transform: scaleY(1.5);
+        margin: 0.5rem;
+        font-weight: 450;
+
+    }
+    50% {
+        letter-spacing: normal;
+        transform: scaleX(0) scaleY(1.5);
+    }
+    0% {
+        transform: scaleY(1.5);
+        margin: 0.5rem;
+        font-weight: 450;
+
+    }
+}
