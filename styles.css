@@ -6,7 +6,7 @@ body{
 }
 .logo{
     filter: url(#grain);
-    width: 5vw;
+    width: 10vw;
 
 
 }
@@ -28,7 +28,7 @@ h1{
     font-weight: 200;
     animation: typo-move 3s infinite;
     transform: scaleY(5);
-    font-size: 3vw;
+    font-size: 5vw;
     backface-visibility: visible;
 
 }
@@ -40,7 +40,7 @@ section{
 
     margin-left: 5.5vw;
     text-align: justify;
-    width: 20vw
+    width: 30vw
 }
 
 #flying-buttons{
@@ -70,4 +70,11 @@ section{
     100% {
         transform: perspective(800px) rotateY(360deg);
     }
+}
+
+
+h3{
+    font-family: Lora;
+    font-size: 2vw;
+    font-weight: lighter;
 }
