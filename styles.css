@@ -24,9 +24,10 @@ h1{
 
 }
 #logotext{
-    animation-name: typo-move;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
+    font-weight: 400;
+    animation: typo-move 5s infinite;
+    transform: scaleY(1.5);
+    font-size: 5vw;
 
 }
 #changing {
@@ -57,21 +58,14 @@ section{
     display: flex;
 }
 
-@keyframes typo-move {
-    0% {
-        transform: scaleY(1.5);
-        margin: 0.5rem;
-        font-weight: 450;
-
+@keyframes typo-move{
+    0%{
+        transform: scaleX(0);
     }
-    50% {
-        letter-spacing: normal;
-        transform: scaleX(0) scaleY(1.5);
+    50%{
+        transform: scaleX(-1);
     }
-    0% {
-        transform: scaleY(1.5);
-        margin: 0.5rem;
-        font-weight: 450;
-
+    100%{
+        transform: scaleX(1);
     }
 }
