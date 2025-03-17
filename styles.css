@@ -24,10 +24,12 @@ h1{
 
 }
 #logotext{
-    font-weight: 400;
-    animation: typo-move 5s infinite;
-    transform: scaleY(1.5);
-    font-size: 5vw;
+    transform-style: preserve-3d;
+    font-weight: 200;
+    animation: typo-move 3s infinite;
+    transform: scaleY(5);
+    font-size: 3vw;
+    backface-visibility: visible;
 
 }
 #changing {
@@ -58,14 +60,14 @@ section{
     display: flex;
 }
 
-@keyframes typo-move{
-    0%{
-        transform: scaleX(0);
+@keyframes typo-move {
+    0% {
+        transform: perspective(800px) rotateY(0deg);
     }
-    50%{
-        transform: scaleX(-1);
+    50% {
+        transform: perspective(800px) rotateY(180deg);
     }
-    100%{
-        transform: scaleX(1);
+    100% {
+        transform: perspective(800px) rotateY(360deg);
     }
 }
