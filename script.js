@@ -1,28 +1,38 @@
-let FallIntro = document.getElementById("introduction");
+const buttons = document.querySelectorAll('.nav-button');
 
-function displayFallIntro() {
-    let prepareText = FallIntro.innerText;
+buttons.forEach(button => {
+    let text = buttons.textContent.trim();
+    button.innerText = "";
 
-    for (let i = 0; i < prepareText.length; i++) {
-        const char = prepareText[i]
-        const span = document.createElement("span");
-        span.className = "letter"
-        span.innerText = char;
-        prepareText.appendChild(span)
-        letter.addEventListener("mouseenter", () => {
-            const randomX = Math.random() * 30 - 10;
-            const randomY = Math.random() * 20 -10;
-            const randomDEG = Math.random() * Math.PI * 20 - 10;
-            letter.style.transform = `translate(${randomX},${randomY})`;
+    text.split("").forEach(button => {
+        let span = document.createElement("span");
+        span.textContent = char;
+        button.appendChild(span);
+        console.log("yes")
+    });
+    buttons.addEventListener("mousemove", (e) => {
+        let react = buttons.getBoundingClientRect();
+        let x = e.clientX - react.left;
+        let y = e.clientY - react.top;
+
+        button.querySelectorAll(".letter").forEach(letter => {
+            let letterReact = letter.getBoundingClientRect()
+            let letterX = letterReact- react.left;
+            let letterY =  letterReact - react.top;
+            let deltaX  = letterX - x;
+            let deltaY = letterY - y;
+            let moveX = (deltaX / distance) * 20;
+            let moveY = (deltaY / distance) * 20;
+
+            letter.style.transform = `transflater(${moveX}px, ${moveY}px)`;
+
         })
+    })
 
-    }
-
-    displayFallIntro();
-
-
-}
-
-
-
+    buttons.addEventListener("mouseleave", (e) => {
+        buttons.querySelectorAll('.letter').forEach(letter => {
+            letter.style.transform = "translate(0, 0)";
+        })
+    })
+})
 

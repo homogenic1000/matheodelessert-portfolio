@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
 body{
     margin: 1vw;
 }
@@ -37,10 +42,10 @@ h1{
 }
 
 section{
-
-    margin-left: 5.5vw;
+    padding-top: 5vh;
+    margin-left: 10vw;
     text-align: justify;
-    width: 30vw
+    width: 40vw
 }
 
 #flying-buttons{
@@ -92,11 +97,21 @@ header{
 
 .nav-button{
     font-size: 1.5vw;
-    text-decoration: none;
-    color: black;
     font-family: Lora;
     background: none;
     border: none;
     text-underline-mode: none;
     margin-left: 5.5vw;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.nav-button:hover{
+    color:  #F4983C;
+    transform: scale(1.2)
+}
+
+.letter{
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
