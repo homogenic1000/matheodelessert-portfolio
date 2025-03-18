@@ -44,10 +44,8 @@ h1{
 }
 
 section{
-
     display: flex;
     align-items: center;
-    width: 100vw;
     padding-top: 4vh;
     margin-left: 0vw;
     text-align: justify;
@@ -124,5 +122,8 @@ header{
 .letter{
     display: inline-block;
     transition: transform 0.2s ease;
+}
+#img-intro{
+    width: 50vw;
 }
 
