@@ -95,8 +95,11 @@ h3{
 
 
 header{
+
     display: flex;
     align-items: center;
+    align-content: center;
+    justify-content: space-between;
 }
 
 #nav-bar{
@@ -124,6 +127,6 @@ header{
     transition: transform 0.2s ease;
 }
 #img-intro{
-    width: 50vw;
+    width: 39vw;
 }
 
