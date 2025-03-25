@@ -45,6 +45,7 @@ h1{
 
 section{
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding-top: 4vh;
     margin-left: 0vw;
@@ -69,6 +70,7 @@ section{
 }
 
 #introduction{
+    padding-right: 20vw;
     margin: 2vw;
 }
 #introduction2{
@@ -94,17 +96,22 @@ h3{
 }
 
 
-header{
 
+header{
     display: flex;
+    flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    margin: 2vw;
 }
 
-#nav-bar{
-    margin-left: 5.5vw;
-}
+
+#nav-bar {
+        display: flex;
+        align-items: center; /* Aligne les éléments verticalement */
+        gap: 2vw; /* Ajoute un espacement entre les éléments si nécessaire */
+    }
 
 
 .nav-button{
@@ -118,8 +125,8 @@ header{
 }
 
 .nav-button:hover{
-    color:  #F4983C;
-    transform: scale(1.2)
+    color: #F4983C;
+    transform: scaleY(2.2);
 }
 
 .letter{
@@ -128,5 +135,15 @@ header{
 }
 #img-intro{
     width: 39vw;
+    bottom: 20rem;
 }
 
+#projets-button{
+    display: flex;
+    position: relative;
+}
+
+#\ Paragraph-CTEXT{
+    display: flex;
+    flex-direction: row;
+}
