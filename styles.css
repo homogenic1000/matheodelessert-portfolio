@@ -257,3 +257,12 @@ section{
         display: none;
     }
 }
+@media (max-width: 430px){
+    #logotext{
+        font-size: 4vw;
+    }
+    #logo{
+        width: 10vw;
+    }
+
+}
