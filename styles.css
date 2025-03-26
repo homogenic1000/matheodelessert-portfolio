@@ -264,5 +264,8 @@ section{
     #logo{
         width: 10vw;
     }
+    .nav-button{
+        display: none;
+    }
 
 }
