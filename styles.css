@@ -259,10 +259,10 @@ section{
 }
 @media (max-width: 430px){
     #logotext{
-        font-size: 4vw;
+        font-size: 7vw;
     }
     #logo{
-        width: 10vw;
+        width: 18vw;
     }
     .nav-button{
         display: none;
