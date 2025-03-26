@@ -200,3 +200,6 @@ body{
         opacity: 1;
     }
 }
+#logo{
+    transform: rotate(0deg);
+}
