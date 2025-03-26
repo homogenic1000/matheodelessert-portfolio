@@ -144,9 +144,10 @@ header{
     position: relative;
 }
 
-#\ Paragraph-CTEXT{
-    display: flex;
-    flex-direction: row;
+#Paragraph-CTEXT{
+    font-size: 3vw;
+    padding-top: 5vw;
+    padding-left: 4vw;
 }
 
 h1{
