@@ -2,12 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+header{
+    position: fixed;
+    top: 0;
+
+}
 
 a{
     text-decoration: none;
     color: inherit;
 }
 body{
+    height: 2000px;
     margin: 2vw;
 }
 .logo{
@@ -199,4 +205,67 @@ body{
     to {
         opacity: 1;
     }
+}
+    #logo {
+        transition: transform 0.1s ease;  /* Pour rendre la rotation fluide */
+        display: block;
+        margin: 0 auto;
+    }
+
+
+aside{
+    padding-top: 5vw;
+}
+section{
+    padding-top: 55vw;
+}
+
+@media (max-width: 430px){
+    body{
+        display: flex;
+        align-items: center;
+
+    }
+    #logo-for-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+    }
+    #logo{
+        width: 10vw;
+    }
+    #logotext{
+        white-space: nowrap;
+        font-size: 7vw;
+    }
+    #header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        gap: 0;
+        margin: 0;
+    }
+    #home{
+        display: none;
+    }
+    #about{
+        display: none;
+    }
+    #contact{
+        display: none;
+    }
+}
+@media (max-width: 430px){
+    #logotext{
+        font-size: 7vw;
+    }
+    #logo{
+        width: 18vw;
+    }
+    .nav-button{
+        display: none;
+    }
+
 }
