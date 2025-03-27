@@ -46,6 +46,10 @@ h1{
     backface-visibility: visible;
 
 }
+
+#logotext:hover{
+    color: #F4983C;
+}
 #changing {
 
 }
@@ -176,16 +180,6 @@ h1{
     }
 }
 
-
-#float-text{
-
-    animation-delay: 2ms;
-    animation-name: float;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-
 #LogoIMG{
     opacity: 0;
     animation: apparition 50ms forwards;
@@ -275,4 +269,25 @@ section{
         display: none;
     }
 
+}
+
+.dark-mode{
+    background-color: #222334;
+}
+
+body.dark-mode{
+    background-color: #0d0e13;
+}
+
+body.dark-mode a {
+    color: #d6d6d6 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode #logotext,
+body.dark-mode button{
+    color: #d5d5d5 !important;
 }
