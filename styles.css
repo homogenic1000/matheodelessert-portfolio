@@ -258,8 +258,15 @@ section{
     }
 }
 @media (max-width: 430px){
+    #header{
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
     #logotext{
         font-size: 7vw;
+        margin-left: 5vw;
+        margin-right: 0;
     }
     #logo{
         width: 18vw;
