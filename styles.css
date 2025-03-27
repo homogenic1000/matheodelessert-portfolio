@@ -32,11 +32,17 @@ body{
     flex-direction: row;
 }
 
-h1{
+.funnel{
+    transform: scaleY(100%);
+    font-family: Funnel Sans;
+    font-size: 10vw;
+    color: black;
+}
 
-    font-family: Lora;
-
-
+#intro{
+    padding: 0;
+    margin: 0;
+    word-spacing: 15vw;
 }
 #logotext{
     transform-style: preserve-3d;
